@@ -786,7 +786,7 @@ ul li a:hover {
     width: 100%;
     height: auto;
     padding: 0;
-    border:1px solid red;
+    /* border:1px solid red; */
   }
 
   .stuffed-animal-1-text-box {
