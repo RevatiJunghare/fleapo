@@ -283,6 +283,7 @@ ul li a:hover {
   height: auto;
   object-fit: cover;
   border-radius: 28px 28px 0px 0px;
+  
 }
 
 .box-rev-text {
@@ -310,7 +311,7 @@ ul li a:hover {
 
 
 .line-break {
-  font-family: serif;
+  font-family: 'Roboto', sans-serif; ;
   /* width: 42ch; */
   word-wrap: break-word;
   white-space: pre-wrap;
@@ -351,7 +352,7 @@ ul li a:hover {
 }
 
 .flower_rev {
-  font-family: serif;
+  font-family: 'Roboto', sans-serif; ;
   font-weight: 500;
   font-style: italic;
   font-size: 36px;
@@ -359,7 +360,7 @@ ul li a:hover {
   margin-left: -32px;
 }
 .heart_rev{
-  font-family: serif;
+  font-family: 'Roboto', sans-serif; ;
   font-weight: 500;
   font-style: italic;
   font-size: 36px;
@@ -384,7 +385,7 @@ ul li a:hover {
 }
 
 .tedyy-name {
-  font-family: serif;
+  font-family: 'Roboto', sans-serif; ;
   font-weight: 500;
   font-size: 20px;
 }
@@ -402,7 +403,7 @@ ul li a:hover {
 }
 
 .price {
-  font-family: serif;
+  font-family: 'Roboto', sans-serif; ;
   font-weight: 600;
   font-size: 20px;
 }
@@ -457,7 +458,7 @@ ul li a:hover {
 
 .flower-text {
   height: 58px;
-  font-family: serif;
+  font-family: 'Roboto', sans-serif; ;
   font-weight: 600;
   font-size: 48px;
   
@@ -589,7 +590,7 @@ ul li a:hover {
 
 
 .shipping-header {
-  font-family: serif;
+  font-family: 'Roboto', sans-serif; ;
   font-weight: 600;
   font-size: 22px;
   text-align: center;
@@ -601,10 +602,10 @@ ul li a:hover {
   }
 }
 
-@media (max-width: 900px) {
-  .slide {
-    min-width: 100%;
-  }
+@media (max-width: 1024px) {
+   .slide {
+    min-width: calc(100% / 2.3);
+  } 
 }
 
 .box-fdle {
@@ -727,7 +728,7 @@ ul li a:hover {
 }
 
 .stuffed-animal-1-text-box > :first-child {
-  font-family: serif;
+  font-family: 'Roboto', sans-serif; ;
   font-weight: 600;
   font-size: 33px;
   text-align: center;
@@ -738,6 +739,7 @@ ul li a:hover {
 
 
 .box-7-content-second {
+  width:100%;
   display: flex;
     flex-direction: row;
     border-radius: 15px;
@@ -752,12 +754,12 @@ ul li a:hover {
 }
 
 .stuffed-animal-2-text-box > :first-child {
-  font-family: serif;
+  font-family: 'Roboto', sans-serif; ;
     font-weight: 600;
     font-size: 24px;
 }
 .per-ch {
-  font-family: serif;
+  font-family: 'Roboto', sans-serif; ;
   width: auto;
   word-wrap: break-word;
   white-space: pre-wrap;
@@ -791,14 +793,58 @@ ul li a:hover {
     padding: 0 60px;
   }
 
-  .box-7-content-first, .sub-content {
+  .box-7-content-first {
     width: 100%;
-    margin-bottom: 20px; /* Add space between stacked items */
   }
+  .sub-content {
+    width: 100%;
+    margin-bottom: 20px; 
+  }
+  .box-7-content-first{
+    display: flex;
+    gap:35px;
+    border-radius: 15px;
+  }
+
+  .stuffed-animal-1-text-box{
+    height:183px;
+    white-space: nowrap; /* Prevents the text from wrapping */
+    overflow: hidden; /* Hides overflow content */
+    text-overflow: ellipsis;
+  }
+  .stuffed-animal-1-text-box > :first-child{
+    font-size: 24px;
+  }
+
+  .per-ch {
+    padding:0px 0px 20px 20px;
+  }
+
+  .box-7-content-second{
+    align-items: center;
+  }
+
+  .stuffed-animal-2-img-box{
+    height:183px;
+    flex:1;
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+  }
+  .stuffed-animal-2-text-box{
+    flex:1
+  }
+
+  .stuffed-animal-2-img-box img{
+    width:100%;
+    height:100%;
+  }
+
+ 
 }
 
 /* For screens smaller than 768px */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .box-7 {
     flex-direction: column;
     padding: 0 20px;
@@ -863,18 +909,23 @@ ul li a:hover {
 .footer-row {
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
-
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .footer-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.horizontal-line{
+  height:6px;
+  background-color: #C9B079;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-head {
-  font-family: serif;
+  font-family: 'Roboto', sans-serif; ;
   font-weight: 500;
   font-size: 36px;
 }
